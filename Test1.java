@@ -73,10 +73,9 @@ public class Test1 {
         Task16(21);
         System.out.println("\nTask17:");
         Task17(1);
+        Task17(2);
         Task17(3);
-        Task17(7);
-        Task17(10);
-        Task17(12);
+        Task17(4);
 
     }
 
@@ -249,25 +248,8 @@ public class Test1 {
     }
 
     public static void Task17(int month) {
-        String[] theSeasons = {"Winter", "Spring", "Summer", "Autumn"};
-        if (month >= 1 && month <= 2) {
-            System.out.println(theSeasons[0]);
-        }
-        if (month >= 3 && month <= 6) {
-            System.out.println(theSeasons[1]);
-        }
-        if (month >= 7 && month <= 9) {
-            System.out.println(theSeasons[2]);
-        }
-        if (month >= 10 && month <= 11) {
-            System.out.println(theSeasons[3]);
-        }
-        if (month == 12) {
-            System.out.println(theSeasons[0]);
-        }
-        if (month <= 0 || month >= 13) {
-            System.err.println("Out of the range");
-        }
+        String[] theSeasons = {"Out of the range","Winter", "Spring", "Summer", "Autumn"};
+        System.out.println(theSeasons[month]);
 
     }
 
