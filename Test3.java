@@ -1,434 +1,257 @@
-import static java.lang.Math.round;
-
 public class Test3 {
     public static void main(String[] args) {
-        problem1();
-        problem2();
-        problem3();
-        problem4();
-        problem5();
-        problem6();
-        problem7();
-        problem8();
-        problem9();
-        problem10();
-        problem11();
-        problem12();
-        problem13();
-        problem14();
-        problem15();
-        problem16();
-        problem17();
-    }
-
-    public static void problem1() {
-        System.out.println("Problem №1");
-        wait(1500);
-        System.out.println("==========================");
-        isEqual(1);
-        isEqual(0);
-        isEqual(-3);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem2() {
-        System.out.println("Problem №2");
-        wait(1500);
-        System.out.println("==========================");
-        isBigger(1);
-        isBigger(0);
-        isBigger(-3);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem3() {
-        System.out.println("Problem №3");
-        wait(1500);
-        System.out.println("==========================");
-        isSmaller(1);
-        isSmaller(0);
-        isSmaller(-3);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem4() {
-        System.out.println("Problem №4");
-        wait(1500);
-        System.out.println("==========================");
-        isBiggerOrEqual(1);
-        isBiggerOrEqual(0);
-        isBiggerOrEqual(-3);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem5() {
-        System.out.println("Problem №5");
-        wait(1500);
-        System.out.println("==========================");
-        isSmallerOrEqual(1);
-        isSmallerOrEqual(0);
-        isSmallerOrEqual(-3);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem6() {
-        System.out.println("Problem №6");
-        wait(1500);
-        System.out.println("==========================");
-        isNotEqual(1);
-        isNotEqual(0);
-        isNotEqual(-3);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem7() {
-        System.out.println("Problem №7");
-        wait(1500);
-        System.out.println("==========================");
-        isTest("test");
-        isTest("тест");
-        isTest(String.valueOf(3));
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem8() {
-        System.out.println("Problem №8");
-        wait(1500);
-        System.out.println("==========================");
-        isOne('1');
-        isOne(1);
-        isOne(3);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem9() {
-        System.out.println("Problem №9");
-        wait(1500);
-        System.out.println("==========================");
-        isTestTrue(true);
-        isTestTrue(false);
-        System.out.println("==========================");
-        System.out.println("Variant 2");
-        System.out.println("==========================");
-        wait(1500);
-        isTestTrueV2(true);
-        isTestTrueV2(false);
-        System.out.println("==========================");
-        wait(1500);
+        System.out.println("Task1:");
+        Task1(1);
+        Task1(0);
+        Task1(-3);
+        System.out.println("\nTask2:");
+        Task2(1);
+        Task2(0);
+        Task2(-3);
+        System.out.println("\nTask3:");
+        Task3(1);
+        Task3(0);
+        Task3(-3);
+        System.out.println("\nTask4:");
+        Task4(1);
+        Task4(0);
+        Task4(-3);
+        System.out.println("\nTask5:");
+        Task5(1);
+        Task5(0);
+        Task5(-3);
+        System.out.println("\nTask6:");
+        Task6(1);
+        Task6(0);
+        Task6(-3);
+        System.out.println("\nTask7:");
+        Task7("test");
+        Task7("тест");
+        Task7(String.valueOf(3));
+        System.out.println("\nTask8:");
+        Task8('1');
+        Task8(1);
+        Task8(3);
+        System.out.println("\nTask9:");
+        Task9(true);
+        Task9(false);
+        System.out.println("Task9_5:");
+        Task9_5(true);
+        Task9_5(false);
+        System.out.println("\nTask10:");
+        Task10(true);
+        Task10(false);
+        System.out.println("Task10_5:");
+        Task10_5(true);
+        Task10_5(false);
+        System.out.println("\nTask11:");
+        Task11(5);
+        Task11(0);
+        Task11(-3);
+        Task11(2);
+        System.out.println("\nTask12:");
+        Task12(5);
+        Task12(0);
+        Task12(-3);
+        Task12(2);
+        System.out.println("\nTask13:");
+        Task13(1, 3);
+        Task13(0, 6);
+        Task13(3, 5);
+        System.out.println("\nTask14:");
+        Task14(1, 15);
+        Task14(5, 13);
+        Task14(3, 15);
+        System.out.println("\nTask15:");
+        Task15(1);
+        Task15(2);
+        Task15(3);
+        Task15(4);
+        System.out.println("\nTask16:");
+        Task16(1);
+        Task16(11);
+        Task16(21);
+        System.out.println("\nTask17:");
+        Task17(1);
+        Task17(3);
+        Task17(7);
+        Task17(10);
+        Task17(12);
 
     }
 
-    public static void problem10() {
-        System.out.println("Problem №10");
-        wait(1500);
-        System.out.println("==========================");
-        isTestNotTrue(true);
-        isTestNotTrue(false);
-        System.out.println("==========================");
-        System.out.println("Variant 2");
-        System.out.println("==========================");
-        wait(1500);
-        isTestNotTrueV2(true);
-        isTestNotTrueV2(false);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem11() {
-        System.out.println("Problem №11");
-        wait(1500);
-        System.out.println("==========================");
-        isBiggerAndSmaller(5);
-        isBiggerAndSmaller(0);
-        isBiggerAndSmaller(-3);
-        isBiggerAndSmaller(2);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem12() {
-        System.out.println("Problem №12");
-        wait(1500);
-        System.out.println("==========================");
-        isEqualOrNot(5);
-        isEqualOrNot(0);
-        isEqualOrNot(-3);
-        isEqualOrNot(2);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem13() {
-        System.out.println("Problem №13");
-        wait(1500);
-        System.out.println("==========================");
-        isEqualOrSmallerAndIsBiggerOrEqual(1, 3);
-        isEqualOrSmallerAndIsBiggerOrEqual(0, 6);
-        isEqualOrSmallerAndIsBiggerOrEqual(3, 5);
-        System.out.println("==========================");
-        wait(1500);
-
-    }
-
-    public static void problem14() {
-        System.out.println("Problem №14");
-        wait(1500);
-        System.out.println("==========================");
-        isBiggerAndSmallerOrBiggerAndEqual(6, 6);
-        isBiggerAndSmallerOrBiggerAndEqual(7, -31);
-        isBiggerAndSmallerOrBiggerAndEqual(10, 12);
-        isBiggerAndSmallerOrBiggerAndEqual(1, 2);
-        System.out.println("==========================");
-        wait(1500);
-
-    }
-
-    public static void problem15() {
-        System.out.println("Problem №15");
-        wait(1500);
-        System.out.println("==========================");
-        seasons(1);
-        seasons(3);
-        seasons(4);
-        seasons(2);
-        seasons(9);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem16() {
-        int rng = Math.round(1 + (round(Math.random() * 50)));
-        System.out.println("Problem №16");
-        wait(1500);
-        System.out.println("==========================");
-        tenDayPeriod(31);
-        tenDayPeriod(12);
-        tenDayPeriod(rng);
-        tenDayPeriod(5);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    public static void problem17() {
-        double rng = 1 + (round(Math.random() * 30));
-        System.out.println("Problem №17");
-        wait(1500);
-        System.out.println("==========================");
-        season(4);
-        season(rng);
-        season(8);
-        season(10);
-        System.out.println("==========================");
-        wait(1500);
-    }
-
-    // Problem 1
-    public static void isEqual(int a) {
+    public static void Task1(int a) {
+        boolean b = true;
         if (a == 0) {
-            System.out.println("Correct");
+            System.out.println(b);
         } else {
-            System.out.println("Wrong");
+            System.out.println(!b);
         }
     }
 
-    // Problem 2
-    public static void isBigger(int a) {
+    public static void Task2(int a) {
+        boolean b = true;
         if (a > 0) {
-            System.out.println("Correct");
+            System.out.println(b);
         } else {
-            System.out.println("Wrong");
+            System.out.println(!b);
         }
     }
 
-    // Problem 3
-    public static void isSmaller(int a) {
+    public static void Task3(int a) {
+        boolean b = true;
         if (a < 0) {
-            System.out.println("Correct");
+            System.out.println(b);
         } else {
-            System.out.println("Wrong");
+            System.out.println(!b);
         }
     }
 
-    // Problem 4
-    public static void isBiggerOrEqual(int a) {
+    public static void Task4(int a) {
+        boolean b = true;
         if (a >= 0) {
-            System.out.println("Correct");
+            System.out.println(b);
         } else {
-            System.out.println("Wrong");
+            System.out.println(!b);
         }
     }
 
-    // Problem 5
-    public static void isSmallerOrEqual(int a) {
+    public static void Task5(int a) {
+        boolean b = true;
         if (a <= 0) {
-            System.out.println("Correct");
+            System.out.println(b);
         } else {
-            System.out.println("Wrong");
+            System.out.println(!b);
         }
     }
 
-    // Problem 6
-    public static void isNotEqual(int a) {
+    public static void Task6(int a) {
+        boolean b = true;
         if (a != 0) {
-            System.out.println("Correct");
+            System.out.println(b);
         } else {
-            System.out.println("Wrong");
+            System.out.println(!b);
         }
     }
 
-    // Problem 7
-    public static void isTest(String a) {
+    public static void Task7(String a) {
+        boolean b = true;
         if (a == "test") {
-            System.out.println("Correct");
+            System.out.println(b);
         } else {
-            System.out.println("Wrong");
+            System.out.println(!b);
         }
     }
 
-    // Problem 8
-    public static void isOne(int a) {
+    public static void Task8(int a) {
         if (a == '1') {
-            System.out.println("Correct");
-
+            System.out.println("ok");
         } else {
-            System.out.println("Wrong");
+            System.out.println("not ok");
         }
     }
 
-    // Problem 9
-    public static void isTestTrue(boolean test) {
-        if (test) {
-            System.out.println("Correct");
+    public static void Task9(boolean b) {
+        if (b) {
+            System.out.println(b);
         } else {
-            System.out.println("Wrong");
+            System.out.println(b);
         }
     }
 
-    // Problem 9 extra
-    public static void isTestTrueV2(boolean test) {
-        System.out.println(test ? "Wrong" : "Correct");
+    public static void Task9_5(boolean b) {
+        System.out.println(b ? "ok" : "not ok");
     }
 
-    // Problem 10
-    public static void isTestNotTrue(boolean test) {
+    public static void Task10(boolean test) {
         if (!test) {
-            System.out.println("Correct");
+            System.out.println("ok");
         } else {
-            System.out.println("Wrong");
+            System.out.println("not ok");
         }
     }
 
-    // Problem 10 extra
-    public static void isTestNotTrueV2(boolean test) {
-        System.out.println(!test ? "Correct" : "Wrong");
+    public static void Task10_5(boolean test) {
+        System.out.println(!test ? "ok" : "not ok");
     }
 
-    // Problem 11
-    public static void isBiggerAndSmaller(int a) {
+    public static void Task11(int a) {
         if (a > 0 && a < 5) {
-            System.out.println("Correct");
+            System.out.println("ok");
         } else {
-            System.out.println("Wrong");
+            System.out.println("not ok");
         }
     }
 
-    // Problem 12
-    public static void isEqualOrNot(float a) {
+    public static void Task12(int a) {
+        int resTrue = a + 7;
+        int resFalse = a / 10;
         if (a == 0 || a == 2) {
-            System.out.println(a + 7);
+            System.out.println(a + "+7=" + resTrue);
         } else {
-            System.out.println(a / 10);
+            System.out.println(a + "/10=" + resFalse);
         }
     }
 
-    // Problem 13
-    public static void isEqualOrSmallerAndIsBiggerOrEqual(int a, int b) {
+    public static void Task13(int a, int b) {
+        int resTrue = a + b;
+        int resFalse = a - b;
         if (a <= 1 && b >= 3) {
-            System.out.println(a + b);
+            System.out.println(a + "+" + b + "=" + resTrue);
         } else {
-            System.out.println(a - b);
+            System.out.println(a + "-" + b + "=" + resFalse);
         }
     }
 
-    // Problem 14
-    public static void isBiggerAndSmallerOrBiggerAndEqual(int a, int b) {
+    public static void Task14(int a, int b) {
         if (a > 2 && a < 11 || b >= 6 && b < 14) {
-            System.out.println("Correct");
+            System.out.println("ok");
         } else {
-            System.out.println("Wrong");
+            System.out.println("not ok");
         }
     }
 
-    // Problem 15
-    public static void seasons(int num) {
+    public static void Task15(int num) {
         String result;
         switch (num) {
             case 1:
                 result = "Winter";
-                System.out.println(result);
                 break;
             case 2:
                 result = "Spring";
-                System.out.println(result);
                 break;
             case 3:
                 result = "Summer";
-                System.out.println(result);
                 break;
             case 4:
                 result = "Autumn";
-                System.out.println(result);
                 break;
             default:
-                System.out.println("Invalid number! Choose a number from 1 to 4!");
+                result = "Out of the range";
+        }
+
+        System.out.println(result);
+    }
+
+    public static void Task16(int day) {
+        if (day >= 1 && day <= 10) {
+            System.out.println("First decade");
+        }
+        if (day >= 11 && day <= 20) {
+            System.out.println("Second decade");
+        }
+        if (day >= 21 && day <= 31) {
+            System.out.println("Third decade");
+        }
+        if (day <= 0 || day >= 32) { // I used if here because else here is working incorrect
+            System.err.println("Out of the range");
         }
     }
 
-    // Problem `16
-    public static void tenDayPeriod(int real_day) {
+    public static void Task17(int month) {
+        String[] theSeasons = {"Winter", "Spring", "Summer", "Autumn"};
+        System.out.println(theSeasons[month]);
 
-        if (real_day >= 1 && real_day <= 10) {
-            System.out.println("First ten-day period (" + real_day + "th)");
-        } else if (real_day > 10 && real_day < 20) {
-            System.out.println("Second ten-day period(" + real_day + "th)");
-        } else if (real_day >= 20 && real_day <= 31) {
-            System.out.println("Third ten-day period(" + real_day + "th)");
-        } else {
-            System.out.println("Invalid data! The day is " + real_day + ". Instead, pick a number from 1 to 31.");
-        }
     }
-
-    // Problem 17
-    public static void season(double month) {
-        long real_month = Math.round(month);
-        if (real_month == 12 || real_month <= 2 && real_month >= 1) {
-            System.out.println("This is winter (" + real_month + ")");
-        } else if (real_month >= 3 && real_month <= 5) {
-            System.out.println("This is spring (" + real_month + ")");
-        } else if (real_month >= 6 && real_month <= 8) {
-            System.out.println("This is summer (" + real_month + ")");
-        } else if (real_month >= 9 && real_month <= 11) {
-            System.out.println("This is autumn (" + real_month + ")");
-        } else {
-            System.out.println("Invalid data! The month is " + real_month + ". Instead, pick a number from 1 to 12.");
-        }
-    }
-
-    public static void wait(int ms) {
-        try {
-            Thread.sleep(ms);
-        } catch (InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
-    }
-
 
 }
