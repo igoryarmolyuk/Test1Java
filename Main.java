@@ -3,16 +3,18 @@ import javax.sound.midi.*;
 public class Main {
 
     public static void main(String[] args) {
-        // this part playing MIDI music & melody composed by "Giblyns"
-        Midi(240, 81, 93, 0);
-        Midi(120, 76, 93, 0);
-        Midi(240, 76, 93, 0);
-        Midi(240, 81, 93, 0);
-        Midi(120, 76, 93, 0);
-        Midi(240, 76, 93, 0);
-        Midi(240, 81, 93, 0);
-        Midi(960, 77, 93, 0);
-        Midi(960, 76, 93, 0);
+        // this part playing MIDI music & melody composed by me "Igor Yarmolyuk"
+        Midi(200, 82, 100, 0);
+        Midi(200, 76, 100, 0);
+        Midi(200, 77, 100, 0);
+        Midi(200, 76, 100, 0);
+        Midi(200, 75, 100, 0);
+        Midi(200, 76, 100, 0);
+        Midi(200, 77, 100, 0);
+        Midi(200, 76, 100, 0);
+        Midi(200, 73, 100, 0);
+        Midi(200, 70, 100, 0);
+        Midi(200, 69, 100, 0);
 
     }
 
