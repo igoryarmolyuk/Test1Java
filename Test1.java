@@ -82,7 +82,7 @@ public class Test1 {
 
     public static void Task1(int a) {
         boolean b = true;
-        if (a == 0) {
+        if (a == 10) {
             System.out.println(b);
         } else {
             System.out.println(!b);
