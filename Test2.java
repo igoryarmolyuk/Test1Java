@@ -1,17 +1,22 @@
 public class Test2 {
     public static void main(String[] args) {
-        triangle();
+        task2(12345, 14);
     }
-    public static void triangle() {
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                if (j == 5 && i<4 || i+5 == j && i<4 || i == 3 && j == 6 || i==3 && j == 7) {
-                    System.out.print(" * ");
-                } else {
-                    System.out.print("   ");
-                }
-            }
-            System.out.println();
+    public static void task2(int num, int userNum) {
+        int sum = 0;
+        int originalNum = num; // Зберігаємо оригінальне число для виведення його пізніше
+
+        // Обчислення суми цифр числа
+        while (num != 0) {
+            sum += num % 10; // Додаємо останню цифру числа до суми
+            num /= 10; // Відкидаємо останню цифру числа
+        }
+
+        // Перевірка, чи дорівнює сума цифр заданого числа заданій користувачем константі
+        if (sum == userNum) {
+            System.out.println("Сума цифр числа " + originalNum + " дорівнює " + userNum);
+        } else {
+            System.err.println("Сума цифр числа " + originalNum + " не дорівнює " + userNum);
         }
     }
 }
