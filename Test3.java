@@ -10,7 +10,7 @@ public class Test3 {
         System.out.println("first res:");
         System.out.println(a);
         int devide = a;
-        for (; devide != 0 && devide != 1; ) {
+        while (devide != 0 && devide != 1) {
             System.out.println(devide);
             if (devide == 9) {
                 devide /= 3;
@@ -25,7 +25,7 @@ public class Test3 {
         System.out.println("second res:");
         System.out.println(b);
         int devideB = b;
-        for (; devideB != 0 && devideB != 1;) {
+        while (devideB != 0 && devideB != 1) {
             System.out.println(devideB);
             if (devideB == 9) {
                 devideB /= 3;
