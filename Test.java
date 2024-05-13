@@ -1,8 +1,8 @@
-// https://github.com/igoryarmolyuk/Test1Java/tree/master
 public class Test {
     public static void main(String[] args) {
-        task1(10);
+        task1(10); // Приклад виклику функції з номером 10
     }
+
     public static void task1(int userNum) {
         int fib1 = 0;
         int fib2 = 1;
@@ -27,7 +27,7 @@ public class Test {
         if (n <= 1) {
             return false;
         }
-        for (int i = 2; i <= Math.sqrt(n); i++) {
+        for (int i = 2; i * i <= n; i++) {
             if (n % i == 0) {
                 return false;
             }
