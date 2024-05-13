@@ -9,31 +9,31 @@ public class Test3 {
     public static void test(int a, int b) {
         System.out.println("first res:");
         System.out.println(a);
-        int devide = a;
-        while (devide != 0 && devide != 1) {
-            System.out.println(devide);
-            if (devide == 9) {
-                devide /= 3;
-                System.out.println(devide);
+        int divide = a;
+        while (divide != 0 && divide != 1) {
+            System.out.println(divide);
+            if (divide == 9) {
+                divide /= 3;
+                System.out.println(divide);
             }
-            devide /= 2;
+            divide /= 2;
         }
-        if (devide == 1) {
+        if (divide == 1) {
             System.out.println("first value ("+a+") is a true");
         }
 
         System.out.println("second res:");
         System.out.println(b);
-        int devideB = b;
-        while (devideB != 0 && devideB != 1) {
-            System.out.println(devideB);
-            if (devideB == 9) {
-                devideB /= 3;
-                System.out.println(devideB);
+        int divideB = b;
+        while (divideB != 0 && divideB != 1) {
+            System.out.println(divideB);
+            if (divideB == 9) {
+                divideB /= 3;
+                System.out.println(divideB);
             }
-            devideB /= 2;
+            divideB /= 2;
         }
-        if (devideB == 1) {
+        if (divideB == 1) {
             System.out.println("first value ("+b+") is a true");
         }
     }
