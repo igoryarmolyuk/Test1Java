@@ -6,13 +6,13 @@ public class Main {
 
         // Створюємо рахунки
         bank.createAccount("Geralt z Rivii");
-        bank.createAccount("Jacques de Aldersberg");
+        bank.createAccount("Zoltan Chivay");
 
         // Додаємо гроші на рахунок
         BankAccount account1 = bank.getAccount("Geralt z Rivii");
         account1.deposit(250);
 
-        BankAccount account2 = bank.getAccount("Jacques de Aldersberg");
+        BankAccount account2 = bank.getAccount("Zoltan Chivay");
         account2.deposit(1000);
 
         // Переводимо гроші між рахунками
@@ -28,7 +28,7 @@ public class Main {
         account1.withdraw(100);
 
         // Розблоковуємо рахунок
-        bank.unblockAccount("Jacques de Aldersberg");
+        bank.unblockAccount("Zoltan Chivay");
 
         // Знімаємо гроші з розблокованого рахунку
         account1.withdraw(100);
