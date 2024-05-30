@@ -5,15 +5,15 @@ public class Main {
         Bank bank = new Bank();
 
         // Створюємо рахунки
+        bank.createAccount("Geralt z Rivii");
         bank.createAccount("Jacques de Aldersberg");
-        bank.createAccount("Geralt from Rivia");
 
         // Додаємо гроші на рахунок
-        BankAccount account1 = bank.getAccount("123456");
-        account1.deposit(1000);
+        BankAccount account1 = bank.getAccount("Geralt z Rivii");
+        account1.deposit(250);
 
-        BankAccount account2 = bank.getAccount("654321");
-        account2.deposit(500);
+        BankAccount account2 = bank.getAccount("Jacques de Aldersberg");
+        account2.deposit(1000);
 
         // Переводимо гроші між рахунками
         account1.transfer(account2, 200);
@@ -22,13 +22,13 @@ public class Main {
         bank.printAllAccounts();
 
         // Блокуємо рахунок
-        bank.blockAccount("123456");
+        bank.blockAccount("Geralt z Rivii");
 
         // Намагаємося зняти гроші з заблокованого рахунку
         account1.withdraw(100);
 
         // Розблоковуємо рахунок
-        bank.unblockAccount("123456");
+        bank.unblockAccount("Jacques de Aldersberg");
 
         // Знімаємо гроші з розблокованого рахунку
         account1.withdraw(100);
