@@ -3,6 +3,7 @@ package library;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Library {
     private List<Book> books;
 
@@ -58,8 +59,6 @@ public class Library {
     // Метод для відображення всієї бібліотеки
     @Override
     public String toString() {
-        return "Library{" +
-                "books=" + books +
-                '}';
+        return "Library{" + "books=" + books + '}';
     }
 }
