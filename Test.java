@@ -28,7 +28,7 @@ class Test {
     }
 
     private static int findPrimeFibonacci(int userNum) {
-        int a = 0, b = 1, position = 2; // Starting from the third Fibonacci number
+        int a = 0, b = 1, position = 2;
         while (true) {
             int next = a + b;
             a = b;
@@ -84,7 +84,7 @@ class Test {
         task1(48, 18);
         task2(123, 6);
         task3(5);
-        int[] array = {1, 2, 3, 4, 5}; // Example usage
+        int[] array = {1, 2, 3, 4, 5};
         task4(array);
     }
 }
