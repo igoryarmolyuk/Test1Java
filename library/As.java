@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 
 class Calculator extends JFrame implements ActionListener {
     private JTextField display;
+    private JTextField displayCurNum;
+    private String displayCurNumContainer;
     private String operator;
     private double num1, num2, result;
 
@@ -19,6 +21,10 @@ class Calculator extends JFrame implements ActionListener {
         display.setFont(new Font("Arial", Font.BOLD, 24));
         display.setEditable(false);
         add(display, BorderLayout.NORTH);
+
+        displayCurNum = new JTextField();
+        displayCurNum.setFont(new Font("Arial", Font.BOLD, 8));
+        displayCurNum.setEditable(false);
 
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(5, 4)); // Changed to 5 rows to add the "C" button
@@ -51,7 +57,12 @@ class Calculator extends JFrame implements ActionListener {
         String command = e.getActionCommand();
 
         if ((command.charAt(0) >= '0' && command.charAt(0) <= '9') || command.equals(".")) {
+            displayCurNumContainer = displayCurNum.getText() + command;
+            displayCurNum.setText(displayCurNumContainer);
+            System.out.println(displayCurNumContainer);
+            add(displayCurNum, BorderLayout.CENTER);
             display.setText(display.getText() + command);
+
         } else if (command.equals("=")) {
             num2 = Double.parseDouble(display.getText());
 
