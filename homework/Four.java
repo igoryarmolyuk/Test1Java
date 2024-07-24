@@ -1,4 +1,4 @@
-package org.lessons;
+package homework;
 
 class Four {
     public static void task1() {
