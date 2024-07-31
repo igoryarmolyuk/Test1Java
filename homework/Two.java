@@ -1,4 +1,6 @@
-public class Test1 {
+package homework;
+
+public class Two {
     public static void main(String[] args) {
         System.out.println("Task1:");
         Task1(1);

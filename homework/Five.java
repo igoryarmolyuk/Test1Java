@@ -1,5 +1,7 @@
+package homework;
+
 // https://github.com/igoryarmolyuk/Test1Java/tree/master
-public class Test {
+public class Five {
     public static void main(String[] args) {
         int[] bubble = {4, 7, 5, 6};
         int[] insert = {3, 7, 6, 5};

@@ -123,7 +123,7 @@ class Task3Hard {
     }
 }
 
-public class Four {
+public class TwentyOne {
     public static void main(String[] args) {
         Task task1 = new Task1();
         task1.execute();

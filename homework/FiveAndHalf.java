@@ -1,4 +1,6 @@
-public class Test2 {
+package homework;
+
+public class FiveAndHalf {
     public static void main(String[] args) {
         triangle();
     }

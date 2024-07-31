@@ -1,4 +1,6 @@
-class Test {
+package homework;
+
+class Six {
     public static void task1(int a, int b) {
         System.out.println("The GCD of " + a + " and " + b + " is " + findGCD(a, b));
     }
@@ -81,7 +83,7 @@ class Test {
     }
 
     public static void main(String[] args) {
-        task1(48, 18);
+        task1(22, 11);
         task2(123, 6);
         task3(5);
         int[] array = {1, 2, 3, 4, 5};

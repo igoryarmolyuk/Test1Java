@@ -1,8 +1,8 @@
-package test;
+package homework;
 
 import java.util.*;
 
-public class Test {
+public class Ten {
     public static int countWords(String sentence) {
         if (sentence == null || sentence.isEmpty()) {
             return 0;

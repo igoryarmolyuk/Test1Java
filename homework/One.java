@@ -1,6 +1,8 @@
+package homework;
+
 import javax.sound.midi.*;
 
-public class Main {
+public class One {
 
     public static void main(String[] args) {
         // this part playing MIDI music & melody composed by me "Igor Yarmolyuk"
