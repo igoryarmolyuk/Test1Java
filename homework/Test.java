@@ -1,9 +1,9 @@
 package homework;
 
 public class Test {
-    public static void main(String[] args) {
-        System.out.println(test(22, 12));
-        System.out.println(test2(121));
+    public static void main(String[] args) throws Exception {
+        System.out.println("GDC: " + test(22, 12));
+        System.out.print(test2(23, 6));
     }
     public static int test(int a, int b) {
         int t = b;
@@ -19,15 +19,24 @@ public class Test {
         }
         return t;
     }
-    public static int test2(int num) {
-        int sum = 0;
-        for (int i = 0; i < num; i++) {
-            sum += num % 10;
-            num /= 10;
-            if (num<10)
-                num *=10;
+    public static int test2(int a, int b) throws Exception {
+        int result = 0;
+        int count = String.valueOf(a).length();
+
+        for (int i = 1; i < count; i++) {
+            System.out.println(i);
+            result += (a % 10);
+            a /= 10;
+            if (a<10)
+                result += a;
+        }
+        System.out.println(a);
+        if (b != result) {
+            throw new Exception("It's not equal to: " + result);
+        } else {
+            System.out.print("It's equal to: ");
         }
 
-        return sum;
+        return result;
     }
 }
