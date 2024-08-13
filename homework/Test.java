@@ -3,7 +3,7 @@ package homework;
 public class Test {
     public static void main(String[] args) throws Exception {
         System.out.println("GDC: " + test(22, 12));
-        System.out.print(test2(23, 6));
+        System.out.print(test2(23, 5));
     }
     public static int test(int a, int b) {
         int t = b;
