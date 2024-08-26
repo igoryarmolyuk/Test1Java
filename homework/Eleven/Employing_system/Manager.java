@@ -1,4 +1,4 @@
-package Employing_system;
+package homework.Eleven.Employing_system;
 
 public class Manager extends Employee {
     public Manager(String name, double salary, String department) {
